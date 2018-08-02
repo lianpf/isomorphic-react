@@ -1,0 +1,22 @@
+{
+  "name": "isomorphic-react",
+  "version": "1.0.0",
+  "description": "React koa server - side isomorphic rendering",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lianpf/isomorphic-react.git"
+  },
+  "keywords": [
+    "React、koa、server-side、isomorphic"
+  ],
+  "author": "lianpf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lianpf/isomorphic-react/issues"
+  },
+  "homepage": "https://github.com/lianpf/isomorphic-react#readme"
+}
