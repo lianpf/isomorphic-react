@@ -1,43 +1,51 @@
 // 库名
 @library: react-pc-ui;
 @button: react-pc-ui-button;
-@table: react-pc-ui-table;
-@message: react-pc-ui-message;
-@modal: react-pc-ui-modal;
-@breadcrumb: react-pc-ui-breadcrumb;
-@tabs: react-pc-ui-tabs;
-@steps: react-pc-ui-steps;
-@slider: react-pc-ui-slider;
-@pagination: react-pc-ui-pagination;
 
 // 颜色
 @color-white: #fff;
 @color-red: #ff3411;
-@color-gray: #808080;
-@color-blue: #1890ff;
-@color-green: #52c41a;
-@color-black: rgba(0, 0, 0, 0.65);
-@color-yellow: #faad14;
+@color-white: #fff;
+@color-gray-shallow: #f3f3f3;
+@color-black: #314659;
 
-@color-bg-slider: #f5f5f5;
+@colorGray2: #868686;
+@colorGray3: #eaeaea;
+@colorGray4: #cacaca;
+@colorRed: #ff3411;
+@colorPink: #fffbfa;
+@colorBlue: #3790F3;
 
 // width
-@modal-width: 520px;
-@modal-confirm-width: 416px;
+//@view-width: 1600px;
+@view-width: 100%;
 
 // radius
 @button-radius: 16px;
-@modal-radius: 4px;
 
 // font
+@fontSizeSmall: 12px;
 @fontSizeNormal: 14px;
 @fontSizeLarge: 16px;
+@fontSizeLargeMore: 18px;
+@fontSizeMax: 24px;
 
 
-
-// util style
-a{
-  text-decoration: none;
-  color: @color-blue;
+// common class
+.showCoding{
+  background: #f2f4f5;
+  border: none;
+  padding: 22px 8px 22px 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  .textLeft{
+    padding-left: 20px;
+    box-sizing: border-box;
+  }
+  .highLightBlue{
+    color: @colorBlue;
+  }
+  .highLightRed{
+    color: @color-red;
+  }
 }
-@border: 1px solid #e8e8e8;

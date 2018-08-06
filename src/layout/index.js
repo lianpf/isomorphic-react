@@ -5,13 +5,10 @@ import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import Home from '../home/index';
 import About from '../about/index';
 import User from '../user/index';
-import Countdown from '../countdown/index';
 
 import './index.less';
-import RedArrow from './img/redArrow.png';
 import names from 'classnames';
 
-import { getUrl } from '../utils/index';
 const menuListConfig = [
   {
     isShow: true,

@@ -13,8 +13,7 @@ var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = merge(webpackBaseConfig, {
   entry: {
-    index: './examples/index',
-    // vendors: './src/vendors.js'
+    index: './src/index',
   },
   // devServer: {
   //   contentBase: './examples/dist',
@@ -22,7 +21,7 @@ module.exports = merge(webpackBaseConfig, {
   // },
   output: {
     filename: '[name].[hash].js',
-    path: path.join(__dirname, '../examples/dist'),
+    path: path.join(__dirname, '../src/dist'),
     publicPath: '',
     chunkFilename: '[name].chunk.js'
   },
@@ -32,8 +31,8 @@ module.exports = merge(webpackBaseConfig, {
     new HtmlWebpackPlugin({
       // title: 'component library'
       inject: true,
-      filename: path.join(__dirname, '../examples/dist/index.html'),
-      template: path.join(__dirname, '../examples/index.html')
+      filename: path.join(__dirname, '../src/dist/index.html'),
+      template: path.join(__dirname, '../src/index.html')
     }),
   ]
 });
