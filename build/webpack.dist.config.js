@@ -1,14 +1,14 @@
-var path = require('path');
-var webpack = require('webpack');
+let path = require('path');
+let webpack = require('webpack');
 // var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var HtmlWebpackPlugin = require('html-webpack-plugin');
-var merge = require('webpack-merge');
-var webpackBaseConfig = require('./webpack.base.config.js');
-var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
+let HtmlWebpackPlugin = require('html-webpack-plugin');
+let merge = require('webpack-merge');
+let webpackBaseConfig = require('./webpack.base.config.js');
+let FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 module.exports = merge(webpackBaseConfig, {
     // 入口
     entry: {
-      index: './examples/index'
+      index: './src/index'
     },
     // 输出
     output: {
@@ -21,7 +21,7 @@ module.exports = merge(webpackBaseConfig, {
         new HtmlWebpackPlugin({
             inject: true,
             filename: path.join(__dirname, '../dist/index.html'),
-            template: path.join(__dirname, '../examples/index.html')
+            template: path.join(__dirname, '../src/index.html')
         }),
         new FriendlyErrorsPlugin()
     ]
